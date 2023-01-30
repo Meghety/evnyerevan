@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 3000px;
+    background: linear-gradient(to right, #00A47C, #E0FFF8);
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+    margin: 30px 0px;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    transition: color 0.3s;
+    font-family: alegreya SC, alegreya, Arial, Helvetica, sans-serif;   
+    letter-spacing: 2px;
+}
+
+
+.line{
+    border-left: 0.1px solid rgb(0, 0, 0,0.5);
+    height: 13px;
+}
+
+@media only screen and (max-width:700px) {
+
+    nav ul li a {
+            font-size: 10px;
+            transition: color 0.3s;
+        }
+
+    .logo {
+            width: 70px;
+            cursor: pointer;
+            margin: 30px 0px;
+        }
+
+    nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 0px;
+}
+    
+
+}
+
+/*row1*/
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    margin-left: 150px;
+}
+
+.col-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.slogan{
+    font-family: alegreya;
+
+}
+
+@media only screen and (max-width:700px){
+
+    .row1{
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        margin-left: 0px;
+        row-gap: 30px;
+        margin-top: 50px;
+    }
+
+
+    
+    .armenia{
+        width: 100px;
+    }
+
+
+    
+}
+
+.row2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 280px;
+    justify-content: center;
+}
+
+.row2 p{
+    font-family: alegreya SC;
+    
+}
+.grid-whatwedo{
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    text-align: center;
+
+
+}
+
+.tag{
+    width: 200px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255,0.2);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+    transition: background-color 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag:hover{
+    background-color: rgb(255, 255, 255,0.8);
+}

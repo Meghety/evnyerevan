@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 3000px;
+    background: linear-gradient(to right, #00A47C, #E0FFF8);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+    margin: 30px 0px;
+}
+
+
+.nav1 {
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav1 ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav1 ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    transition: color 0.3s;
+    font-family: alegreya SC, alegreya, Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.line {
+    border-left: 0.1px solid rgb(0, 0, 0, 0.5);
+    height: 13px;
+}
+
+@media only screen and (max-width:700px) {
+
+    .nav1 ul li a {
+        font-size: 10px;
+        transition: color 0.3s;
+    }
+
+    .logo {
+        width: 70px;
+        cursor: pointer;
+        margin: 30px 0px;
+    }
+
+
+    .nav1 ul li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 0px;
+}
+
+}
+
+
+.heading{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 150px;
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: alegreya Sc;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.heading2{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 50px;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.nav2 {
+    flex: 1;
+    text-align: center;
+
+}
+
+.nav2 ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav2 ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    transition: color 0.3s;
+    font-family: alegreya SC, alegreya, Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.grid {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 40px;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post {
+    width: 200px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+    padding: 10px;
+    background-color: rgb(216, 216, 216);
+
+}
+
+.title {
+    margin-top: 2px;
+    font-size: 18px;
+}
+
+.date {
+    margin-top: 15px;
+}
+
+@media only screen and (max-width:700px) {
+
+    .grid {
+        grid-template-columns: 300px;
+        row-gap: 20px;
+
+    }
+}
